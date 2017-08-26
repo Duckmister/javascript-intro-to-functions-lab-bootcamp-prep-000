@@ -22,17 +22,17 @@ uppercase.toUpperCase === uppercase
 
 var lowercase = "hello"
 
-lowercase.toLowerCase ===lowercase
+lowercase.toLowerCase === lowercase
 
 function sayHiToGrandma(string){
-  if (string === "I love you, Grandma."){
-    console.log("I love you, too.")
-  }
   if (string === lowercase){
-    console.log("I can't hear you!")
+    return("I can\'t hear you!")
   }
-  else{
-    return "YES INDEED!"
+  elseif (string === uppercase){
+    return("YES INDEED! ")
+  }
+  elseif (string === "I love you, Grandma."){
+    return("I love you, too.")
   }
 
 }
